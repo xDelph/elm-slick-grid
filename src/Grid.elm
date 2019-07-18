@@ -28,7 +28,7 @@ The list of data can be very long, thanks to the use of [FabienHenon/elm-infinit
 
 # Configure the column sorting
 
-@docs Sorting(..), compareBoolField, compareFloatField, compareIntField, compareStringField
+@docs compareBoolField, compareFloatField, compareIntField, compareStringField
 
 
 # Configure the column rendering
@@ -38,7 +38,8 @@ The list of data can be very long, thanks to the use of [FabienHenon/elm-infinit
 
 # Boilerplate
 
-@docs Model, Msg(..), init, update, view
+@docs Model, init, update, view
+@docs Msg(..), Sorting(..)
 
 -}
 
