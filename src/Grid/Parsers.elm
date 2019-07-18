@@ -80,10 +80,6 @@ module Grid.Parsers exposing
 
 @docs stringEqualityParser
 
-
-
-
-
 -}
 
 import Parser exposing ((|.), (|=), Parser, chompUntilEndOr, getChompedString, keyword, oneOf, spaces, succeed, symbol)
