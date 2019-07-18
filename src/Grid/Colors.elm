@@ -1,7 +1,7 @@
 module Grid.Colors exposing (black, darkGrey, lightGreen, lightGrey, white)
 
 
-{-|
+{-| Helper functions for color
 
 # Documentation
 
@@ -12,26 +12,41 @@ module Grid.Colors exposing (black, darkGrey, lightGreen, lightGrey, white)
 
 import Css exposing (hex)
 
-black : hex
+{-| TODO some docs
+
+-}
+black : Css.Color
 black =
     hex "000"
 
 
-darkGrey : hex
+{-| TODO some docs
+
+-}
+darkGrey : Css.Color
 darkGrey =
     hex "666"
 
 
-lightGreen : hex
+{-| TODO some docs
+
+-}
+lightGreen : Css.Color
 lightGreen =
     hex "4d4"
 
 
-lightGrey : hex
+{-| TODO some docs
+
+-}
+lightGrey : Css.Color
 lightGrey =
     hex "CCC"
 
 
-white : hex
+{-| TODO some docs
+
+-}
+white : Css.Color
 white =
     hex "fff"

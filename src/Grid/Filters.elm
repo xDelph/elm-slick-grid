@@ -19,7 +19,8 @@ module Grid.Filters exposing
 
 # Others
 
-@docs Filter(..), parseFilteringString
+@docs Filter(..)
+@docs parseFilteringString
 
 -}
 
@@ -73,7 +74,9 @@ type alias TypedFilter a b =
         }
     }
 
+{-| TODO some docs
 
+-}
 parseFilteringString : Maybe String -> Filter a -> Maybe (Item a -> Bool)
 parseFilteringString filteringValue filters =
     let

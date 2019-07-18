@@ -14,7 +14,8 @@ module Grid.Parsers exposing
     , stringEqualityParser
     )
 
-{-| 
+{-| Helper functions for parsing the grid content
+
 
 # Docs for boolEqualityParser
 
@@ -84,7 +85,9 @@ module Grid.Parsers exposing
 
 import Parser exposing ((|.), (|=), Parser, chompUntilEndOr, getChompedString, keyword, oneOf, spaces, succeed, symbol)
 
+{-| TODO some docs
 
+-}
 stringParser : Parser String
 stringParser =
     -- the input string cannot contain "\t"
@@ -92,13 +95,17 @@ stringParser =
     -- getChompedString <| chompWhile (\c -> True)
     getChompedString <| chompUntilEndOr "\u{0000}"
 
+{-| TODO some docs
 
+-}
 stringEqualityParser : Parser String
 stringEqualityParser =
     succeed identity
         |= stringParser
 
+{-| TODO some docs
 
+-}
 lessThanStringParser : Parser String
 lessThanStringParser =
     succeed identity
@@ -107,7 +114,9 @@ lessThanStringParser =
         |. spaces
         |= stringParser
 
+{-| TODO some docs
 
+-}
 greaterThanStringParser : Parser String
 greaterThanStringParser =
     succeed identity
@@ -116,13 +125,17 @@ greaterThanStringParser =
         |. spaces
         |= stringParser
 
+{-| TODO some docs
 
+-}
 intEqualityParser : Parser Int
 intEqualityParser =
     succeed identity
         |= Parser.int
 
+{-| TODO some docs
 
+-}
 lessThanIntParser : Parser Int
 lessThanIntParser =
     succeed identity
@@ -131,7 +144,9 @@ lessThanIntParser =
         |. spaces
         |= Parser.int
 
+{-| TODO some docs
 
+-}
 greaterThanIntParser : Parser Int
 greaterThanIntParser =
     succeed identity
@@ -140,13 +155,17 @@ greaterThanIntParser =
         |. spaces
         |= Parser.int
 
+{-| TODO some docs
 
+-}
 floatEqualityParser : Parser Float
 floatEqualityParser =
     succeed identity
         |= Parser.float
 
+{-| TODO some docs
 
+-}
 lessThanFloatParser : Parser Float
 lessThanFloatParser =
     succeed identity
@@ -155,7 +174,9 @@ lessThanFloatParser =
         |. spaces
         |= Parser.float
 
+{-| TODO some docs
 
+-}
 greaterThanFloatParser : Parser Float
 greaterThanFloatParser =
     succeed identity
@@ -164,7 +185,9 @@ greaterThanFloatParser =
         |. spaces
         |= Parser.float
 
+{-| TODO some docs
 
+-}
 boolParser : Parser Bool
 boolParser =
     oneOf
@@ -174,13 +197,17 @@ boolParser =
             |. keyword "false"
         ]
 
+{-| TODO some docs
 
+-}
 boolEqualityParser : Parser Bool
 boolEqualityParser =
     succeed identity
         |= boolParser
 
+{-| TODO some docs
 
+-}
 lessThanBoolParser : Parser Bool
 lessThanBoolParser =
     succeed identity
@@ -189,7 +216,9 @@ lessThanBoolParser =
         |. spaces
         |= boolParser
 
+{-| TODO some docs
 
+-}
 greaterThanBoolParser : Parser Bool
 greaterThanBoolParser =
     succeed identity
