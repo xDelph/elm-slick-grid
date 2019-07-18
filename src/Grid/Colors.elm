@@ -1,5 +1,15 @@
 module Grid.Colors exposing (black, darkGrey, lightGreen, lightGrey, white)
 
+
+{-|
+
+# Documentation
+
+@docs black, darkGrey, lightGreen, lightGrey, white
+
+-}
+
+
 import Css exposing (hex)
 
 

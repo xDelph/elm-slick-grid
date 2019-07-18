@@ -16,6 +16,11 @@ module Grid.Filters exposing
 
 @docs boolFilter, floatFilter, intFilter, stringFilter
 
+
+# Others
+
+@docs Filter(..), parseFilteringString
+
 -}
 
 import Grid.Parsers exposing (..)

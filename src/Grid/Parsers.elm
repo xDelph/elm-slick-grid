@@ -14,6 +14,78 @@ module Grid.Parsers exposing
     , stringEqualityParser
     )
 
+{-| 
+
+# Docs for boolEqualityParser
+
+@docs boolEqualityParser
+
+
+# Docs for boolParser
+
+@docs boolParser
+
+
+# Docs for floatEqualityParser
+
+@docs floatEqualityParser
+
+
+# Docs for greaterThanBoolParser
+
+@docs greaterThanBoolParser
+
+
+# Docs for greaterThanFloatParser
+
+@docs greaterThanFloatParser
+
+
+# Docs for greaterThanIntParser
+
+@docs greaterThanIntParser
+
+
+# Docs for greaterThanStringParser
+
+@docs greaterThanStringParser
+
+
+# Docs for intEqualityParser
+
+@docs intEqualityParser
+
+
+# Docs for lessThanBoolParser
+
+@docs lessThanBoolParser
+
+
+# Docs for lessThanFloatParser
+
+@docs lessThanFloatParser
+
+
+# Docs for lessThanIntParser
+
+@docs lessThanIntParser
+
+
+# Docs for lessThanStringParser
+
+@docs lessThanStringParser
+
+
+# Docs for stringEqualityParser
+
+@docs stringEqualityParser
+
+
+
+
+
+-}
+
 import Parser exposing ((|.), (|=), Parser, chompUntilEndOr, getChompedString, keyword, oneOf, spaces, succeed, symbol)
 
 
