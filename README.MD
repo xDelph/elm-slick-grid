@@ -1,0 +1,1 @@
+Fork of [PascalLeMerrerPro/elm-slick-grid](https://github.com/PascalLeMerrerPro/elm-slick-grid) 
