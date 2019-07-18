@@ -1,8 +1,9 @@
 {
-    "type": "application",
-    "source-directories": [
-        "src"
-    ],
+    "type": "package",
+    "name": "xdelph/elm-slick-grid",
+    "summary": "Slick grid in ELM",
+    "license": "BSD-3-Clause",
+    "version": "1.0.1",
     "elm-version": "0.19.0",
     "dependencies": {
         "direct": {
