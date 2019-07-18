@@ -41,9 +41,14 @@ The list of data can be very long, thanks to the use of [FabienHenon/elm-infinit
 @docs Model, init, update, view
 
 
-# End of Boilerplate
+# Docs for Msg
 
-@docs Msg(..), Sorting(..)
+@docs Msg(..)
+
+
+#Docs for Sorting
+
+@docs Sorting(..)
 
 -}
 
